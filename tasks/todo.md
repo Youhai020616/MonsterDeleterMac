@@ -65,5 +65,7 @@ Review: all 10 upstream resources match their recorded SHA-256 values, the packa
 - [x] Scan the publishable tree for credentials and oversized files.
 - [x] Run the automated test suite before publishing.
 - [x] Initialize a `main` branch and create the initial commit.
-- [ ] Create `Youhai020616/MonsterDeleterMac` as a public GitHub repository and push.
-- [ ] Verify the remote visibility, branch, and clean working tree.
+- [x] Create `Youhai020616/MonsterDeleterMac` as a public GitHub repository and push.
+- [x] Verify the remote visibility, branch, and clean working tree.
+
+Review: published the repository at `https://github.com/Youhai020616/MonsterDeleterMac` with `PUBLIC` visibility and `main` as the default branch. The initial publish contains 37 intended project files; local environments, build products, caches, and Firecrawl output remain ignored. The pre-publish credential scan found no secrets, and all 31 tests passed.
