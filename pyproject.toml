@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "monster-deleter-mac"
+version = "0.2.0"
+description = "Authorized macOS port of the MonsterDeleter file-to-Trash animation"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "PyQt6>=6.7,<7",
+  "send2trash>=1.8.3,<2",
+]
+
+[project.scripts]
+monster-deleter-mac = "monster_deleter_mac.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3,<9",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/monster_deleter_mac"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
